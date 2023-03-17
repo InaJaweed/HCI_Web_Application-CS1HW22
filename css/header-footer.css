@@ -91,7 +91,7 @@ nav a.active:after {
 
 /* FOOTER */
 
-/* .footer {
+ .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,4 +129,4 @@ nav a.active:after {
 
 .footer li:first-child {
     font-weight: bold;
-} */
+} 
