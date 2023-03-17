@@ -79,6 +79,7 @@
 
 .side-menu {
     display: none;
+    z-index: 10;
 }
 
 /* SMALL SCREEN NAVBAR */
@@ -263,6 +264,39 @@
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+/* INFO MESSAGE BOX */
+
+.info-message {
+    z-index: 30;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    max-width: 20rem;
+    bottom: -5rem;
+    left: 50%;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    transform: translate(-50%, 0);
+    transition: all .2s ease-in-out;
+}
+
+.info-message.active {
+    bottom: 2rem;
+}
+
+.info-message.success {
+    background: linear-gradient(to bottom right, #56df56, rgb(35, 187, 58));
+}
+
+.info-message.fail {
+    background: linear-gradient(to bottom right, #f16363, #ee8f8f);
 }
 
 

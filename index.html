@@ -20,14 +20,15 @@
         }
     </style>
     <script src="./data/productData.js" defer></script>
-    <script src="./JS/products.js" defer></script>
+    <script src="./JS/common.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="Images/logoTitle.png" alt="Logo">
-        </div>
+    <header class="header">
+        <p class="menu-button">&#9776;</p>
+        <a class="logo" href="./index.html">
+            <img src="./images/logoTitle.png" alt="Logo">
+        </a>
         <nav class="navigation">
             <ul>
                 <li><a href="./index.html">HOME</a></li>
@@ -37,33 +38,53 @@
         </nav>
         <div class="icons">
             <div class="cart-btn">
-                <a href="#"><img src="Images/cartIcon.png" alt="Shopping Cart">
-                    <span class="cart-items">0</span>
-                </a>
+                <img src="./images/cartIcon.png" alt="Shopping Cart">
+                <span class="cart-items">0</span>
             </div>
         </div>
+
+        <div class="side-menu">
+            <div class="menu-title">
+                <h2>Menu</h2>
+                <button class="close-button">&times;</button>
+            </div>
+            <nav class="mobile-navigation">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./pages/m-product.html">PRODUCTS</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <div class="cart-sidebar">
-        <button class="cart-close-button">&times;</button>
-        <h3>Shopping Basket</h3>
+        <div class="cart-title">
+            <h2>Shopping Basket</h2>
+            <button class="cart-close-button">&times;</button>
+        </div>
         <div class="cart-items-container">
             <!-- Here goes the list of cart items -->
         </div>
         <div class="cart-total-container">
             <p>Total:</p>
-            <p class="cart-total-price">$0.00</p>
+            <p class="cart-total-price">£0.00</p>
         </div>
         <div class="cart-buttons-container">
             <button class="cart-remove-all-button">Remove all items</button>
             <button class="cart-checkout-button">Checkout</button>
         </div>
     </div>
+    <div class="info-message">
+        <p class="message-text">
+            <!-- message notification -->
+        </p>
+    </div>
 
     <div class="container">
         <div class="banner">
             <p>WINTER SALE: USE CODE "WINTER10" FOR 10% OFF &nbsp &nbsp &nbsp WINTER SALE: USE CODE "WINTER10" FOR 10%
-                OFF &nbsp &nbsp &nbsp WINTER SALE: USE CODE "WINTER10" FOR 10% OFF
-                CODE "WINTER10" FOR 10% OFF</p>
+                OFF &nbsp &nbsp &nbsp WINTER SALE: USE CODE "WINTER10" FOR 10% OFF &nbsp &nbsp &nbsp WINTER SALE: USE CODE "WINTER10" FOR 10% OFF</p>
         </div>
         <div class="content">
             <h2>Mens Collection 2023</h2>

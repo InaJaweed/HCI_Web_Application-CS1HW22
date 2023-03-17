@@ -10,11 +10,10 @@
 
 .front-page {
     display: flex;
-    margin: 3rem 3rem;
+    margin: 3rem 0 0 3rem;
 }
 
 .all-products {
-    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     gap: 1rem;
@@ -22,12 +21,10 @@
 }
 
 .categories {
-    /* border: 1px solid red; */
     text-align: left;
     margin: 0 2rem 0 0;
     width: 15%;
 }
-
 
 .category {
     cursor: pointer;
@@ -70,38 +67,37 @@
 .product-outer-box {
     text-align: left;
     user-select: none;
-    /* width: 14rem; */
-    /* height: 13rem; */
 }
 
-/* info message box */
-
-.info-message {
-    z-index: 20;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    max-width: 20rem;
-    bottom: -5rem;
-    left: 50%;
-    border-radius: 15px;
-    padding: 0.5rem 1rem;
-    font-weight: 500;
-    font-size: 16px;
-    color: #ffffff;
-    text-align: center;
-    transform: translate(-50%, 0);
-    transition: all .2s ease-in-out;
+.add-to-cart {
+    cursor: pointer;
+    padding: 5px 15px;
+    border: 2px solid #626262;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    transition: border .1s ease-in-out;
 }
 
-.info-message.active {
-    bottom: 2rem;
+.add-to-cart:hover {
+    border: 2px solid #f5b29c;
 }
 
-.info-message.success {
-    background: linear-gradient(to bottom right, #56df56, rgb(35, 187, 58));
-}
+@media only screen and (max-width: 724px) {
+    .front-page {
+        flex-direction: column;
+        margin: 3rem 3rem 0 3rem;
+    }
 
-.info-message.fail {
-    background: linear-gradient(to bottom right, #f16363, #ee8f8f);
+    .categories:not(.categories-text) {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .all-products {
+        grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+        width: 101%;
+        gap: 0.5rem;
+    }
+    
 }

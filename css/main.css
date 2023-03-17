@@ -5,10 +5,11 @@ body {
 .container {
     height: 100vh;
     width: 100%;
-    background-image: url(../images/background2.png);
+    background-image: url(../images/background.png);
     background-position: center;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 .banner {
@@ -32,10 +33,10 @@ body {
     padding-left: 5%;
     padding-right: 5%;
     position: relative;
+    z-index: 2;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    padding-right: 5%;
 }
 
 .content h2 {
@@ -81,78 +82,16 @@ body {
 
 .feature-img {
     position: absolute;
-    top: 0;
-    bottom: 20%;
-    left: 40%;
-    transform: scale(0.8);
+    top: 4rem;
+    left: 50%;
+    width: 45rem;
 }
 
-/* Shopping cart sidebar */
-.cart-sidebar {
-    position: fixed;
-    top: 0;
-    right: -400px;
-    width: 400px;
-    height: 100%;
-    background-color: white;
-    padding: 20px;
-    z-index: 100;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: right 0.3s ease-out;
-}
-
-.cart-sidebar.show {
-    right: 0;
-}
-
-.cart-sidebar h3 {
-    margin-top: 0;
-}
-
-.cart-close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.cart-items-container {
-    max-height: calc(100% - 150px);
-    overflow-y: auto;
-}
-
-.cart-total-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.cart-total-price {
-    font-weight: bold;
-}
-
-.cart-buttons-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.cart-remove-all-button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.cart-checkout-button {
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+@media only screen and (max-width: 900px) {
+    .content p {
+        width: fit-content;
+        padding: 5px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.4);
+    }
 }
