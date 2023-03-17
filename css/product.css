@@ -39,7 +39,7 @@
 }
 
 .categories .pressed {
-    background: linear-gradient(to bottom right, #f7cbeb, #c1ddf4);
+    background: linear-gradient(to bottom right, #f3d6cd, #efbbaa);
 }
 
 .categories h3 {
@@ -74,73 +74,34 @@
     /* height: 13rem; */
 }
 
+/* info message box */
 
-/* Shopping cart sidebar */
-.cart-sidebar {
+.info-message {
+    z-index: 20;
     position: fixed;
-    top: 0;
-    right: -400px;
-    width: 400px;
-    height: 100%;
-    background-color: white;
-    padding: 20px;
-    z-index: 100;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: right 0.3s ease-out;
-}
-
-.cart-sidebar.show {
-    right: 0;
-}
-
-.cart-sidebar h3 {
-    margin-top: 0;
-}
-
-.cart-close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.cart-items-container {
-    max-height: calc(100% - 150px);
-    overflow-y: auto;
-}
-
-.cart-total-container {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    justify-content: center;
+    max-width: 20rem;
+    bottom: -5rem;
+    left: 50%;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    transform: translate(-50%, 0);
+    transition: all .2s ease-in-out;
 }
 
-.cart-total-price {
-    font-weight: bold;
+.info-message.active {
+    bottom: 2rem;
 }
 
-.cart-buttons-container {
-    display: flex;
-    justify-content: space-between;
+.info-message.success {
+    background: linear-gradient(to bottom right, #56df56, rgb(35, 187, 58));
 }
 
-.cart-remove-all-button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.cart-checkout-button {
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+.info-message.fail {
+    background: linear-gradient(to bottom right, #f16363, #ee8f8f);
 }
