@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevWear</title>
+    <!-- CSS Styles-->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/persona.css">
+    <link rel="stylesheet" href="../css/header-footer-cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script src="../data/productData.js" defer></script>
+    <script src="../JS/common.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <p class="menu-button">&#9776;</p>
+        <a class="logo" href="../index.html">
+            <img src="../images/logoTitle.png" alt="Logo">
+        </a>
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./m-product.html">PRODUCTS</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="cart-btn">
+                <img src="../images/cartIcon.png" alt="Shopping Cart">
+                <span class="cart-items">0</span>
+            </div>
+        </div>
+
+        <div class="side-menu">
+            <div class="menu-title">
+                <h2>Menu</h2>
+                <button class="close-button">&times;</button>
+            </div>
+            <nav class="mobile-navigation">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./m-product.html">PRODUCTS</a></li>
+                    <li><a href="./about.html">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cart-sidebar">
+        <div class="cart-title">
+            <h2>Shopping Basket</h2>
+            <button class="cart-close-button">&times;</button>
+        </div>
+        <div class="cart-items-container">
+            <!-- Here goes the list of cart items -->
+        </div>
+        <div class="cart-total-container">
+            <p>Total:</p>
+            <p class="cart-total-price">£0.00</p>
+        </div>
+        <div class="cart-buttons-container">
+            <button class="cart-remove-all-button">Remove all items</button>
+            <button class="cart-checkout-button">Checkout</button>
+        </div>
+    </div>
+    <div class="info-message">
+        <p class="message-text">
+            <!-- message notification -->
+        </p>
+    </div>
+
+
+    <div class="wrapper">
+        <div class="left">
+            <img src="../persona_img/Zayn.png" alt="Profile Picture">
+            <h4>Thomas Featherby</h4>
+            <p>Age: 30</p>
+            <p>Location: New York, USA</p>
+            <p>Job: Software Engineer</p>
+        </div>
+        <div class="right">
+            <div class="quote">
+                <p style="font-weight: bold; font-size: 1em;">"Success is not final, failure is not fatal: It is the
+                    courage to continue that counts."</p>
+            </div>
+            <div class="bio">
+                <h3>Bio</h3>
+                <p>Thomas Featherby is a 30-year-old software engineer who graduated with honors from a prestigious
+                    university with a degree in computer science. He has been working for the past five years at a
+                    startup that specializes in developing cutting-edge software solutions for businesses. Thomas is
+                    a
+                    highly skilled engineer with expertise in programming languages such as Java, Python, and C++.
+                    He is
+                    known for his attention to detail and ability to solve complex problems quickly.</p>
+            </div>
+            <div class="goal">
+                <h3>Goal</h3>
+                <p>Thomas is driven by a desire to make a significant impact in the world of technology. He wants to
+                    create software that can change people's lives for the better and revolutionize the way
+                    businesses
+                    operate. He is also interested in advancing his career and taking on more leadership roles
+                    within
+                    his organization. Thomas is always looking for new challenges and opportunities to learn and
+                    grow.
+                </p>
+            </div>
+            <div class="frustrations">
+                <h3>Frustrations</h3>
+                <ul>
+                    <li>Working with outdated technologies</li>
+                    <li>Dealing with difficult team members</li>
+                    <li>Not having enough opportunities for professional development</li>
+                    <li>Not being taken seriously</li>
+                    <li>Inability to solve a challenging problem</li>
+                </ul>
+            </div>
+            <div class="dream-companies">
+                <h3>Dream Companies</h3>
+                <ul>
+                    <li>Google</li>
+                    <li>Microsoft</li>
+                    <li>Amazon</li>
+                </ul>
+            </div>
+            <div class="personality">
+                <h3>Personality</h3>
+                <ul>
+                    <li>Hardworking</li>
+                    <li>Detail-oriented</li>
+                    <li>Collaborative</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
