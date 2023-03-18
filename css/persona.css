@@ -5,10 +5,12 @@ body {
 
 .wrapper {
     position: relative;
-    margin: 50px auto;
+    margin: 20px auto;
     width: 70%;
+    /* height: auto; */
     display: flex;
     box-shadow: 0 1px 20px 0 rgba(69, 90, 100, .08);
+
 }
 
 .wrapper .left {
@@ -123,18 +125,18 @@ body {
     letter-spacing: 2px;
 }
 
-@media only screen and (max-width: 900px) {
+/* @media only screen and (max-width: 900px) {
     .wrapper {
         width: 90%;
         margin: 80px auto 20px;
-        /* adjust margin values as needed */
-    }
-}
 
-@media only screen and (min-width: 900px) {
+    }
+} */
+
+/* @media only screen and (min-width: 900px) {
     .wrapper {
         width: 90%;
         margin: 80px auto 20px;
-        /* adjust margin values as needed */
+
     }
-}
+} */
