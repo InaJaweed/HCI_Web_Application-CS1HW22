@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevWear</title>
     <!-- CSS Styles-->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/header-footer-cart.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header-footer-cart.css">
+    <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,26 +19,27 @@
             font-family: 'Inter', sans-serif;
         }
     </style>
-    <script src="./data/productData.js" defer></script>
-    <script src="./JS/common.js" defer></script>
+    <script src="../data/productData.js" defer></script>
+    <script src="../JS/common.js" defer></script>
+    <script src="../JS/products.js" defer></script>
 </head>
 
 <body>
     <header class="header">
         <p class="menu-button">&#9776;</p>
-        <a class="logo" href="./index.html">
-            <img src="./images/logoTitle.png" alt="Logo">
+        <a class="logo" href="../index.html">
+            <img src="../images/logoTitle.png" alt="Logo">
         </a>
         <nav class="navigation">
             <ul>
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./pages/m-product.html">PRODUCTS</a></li>
-                <li><a href="./pages/about.html">ABOUT US</a></li>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./m-product.html">PRODUCTS</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
             </ul>
         </nav>
         <div class="icons">
             <div class="cart-btn">
-                <img src="./images/cartIcon.png" alt="Shopping Cart">
+                <img src="../images/cartIcon.png" alt="Shopping Cart">
                 <span class="cart-items">0</span>
             </div>
         </div>
@@ -50,9 +51,9 @@
             </div>
             <nav class="mobile-navigation">
                 <ul>
-                    <li><a href="./index.html">HOME</a></li>
-                    <li><a href="./pages/m-product.html">PRODUCTS</a></li>
-                    <li><a href="./pages/about.html">ABOUT US</a></li>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./m-product.html">PRODUCTS</a></li>
+                    <li><a href="./about.html">ABOUT US</a></li>
                 </ul>
             </nav>
         </div>
@@ -81,21 +82,26 @@
         </p>
     </div>
 
-    <div class="container">
-        <div class="banner">
-            <p>WINTER SALE: USE CODE "WINTER10" FOR 10% OFF &nbsp &nbsp &nbsp WINTER SALE: USE CODE "WINTER10" FOR 10%
-                OFF &nbsp &nbsp &nbsp WINTER SALE: USE CODE "WINTER10" FOR 10% OFF &nbsp &nbsp &nbsp WINTER SALE: USE
-                CODE "WINTER10" FOR 10% OFF</p>
+
+    <main class="main-product">
+        <h2>Our Products</h2>
+        <div class="front-page">
+            <div class="categories">
+                <div class="categories-text">
+                    <h3>Categories</h3>
+                </div>
+                <button class="category">Jackets & Coats</button>
+                <button class="category">Hoodies & Sweatshirts</button>
+                <button class="category">Jeans</button>
+                <button class="category">Shorts</button>
+            </div>
+            <div class="all-products">
+                <!-- all products -->
+            </div>
         </div>
-        <div class="content">
-            <h2>Mens Collection 2023</h2>
-            <h1>Winter<br>Coats<br>Sale</h1>
-            <p>Stay warm and stylish this winter with our collection of<br> men's coats! From classic wool coats to
-                trendy puffer<br> jackets, we've got you covered.</p>
-            <a href="./pages/m-product.html" class="button">Go To Shop <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <img src="images/img5.png" class="feature-img">
-    </div>
+    </main>
+
+
 
 </body>
 

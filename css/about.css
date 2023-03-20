@@ -1,0 +1,110 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.aboutContainer {
+    height: 100vh;
+    margin: 0 2rem;
+}
+
+.about-us {
+  margin: 4rem 0;
+}
+
+.about-us h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1E1E1E;
+    text-align: center;
+}
+
+.about-us p {
+    font-size: 20px;
+    color: #1E1E1E;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.values h2 {
+  font-size: 28px;
+}
+
+.values .list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 2rem 2rem;
+}
+
+.list li {
+  text-align: center;
+  margin: 0 auto 1rem auto;
+  padding: 0 2rem;
+  max-width: 30rem;
+}
+
+.list li h3 {
+  margin-bottom: 0.5rem;
+}
+
+.personas {
+  text-align: center;
+}
+
+.personas img {
+  border-radius: 12px;
+}
+
+.personas h4 {
+  font-size: 20px;
+  color: #1E1E1E;
+  line-height: 1.4;
+  margin-bottom: 18px;
+  text-align: center;
+  text-transform: uppercase;;
+}
+
+.personas h2 {
+  margin-bottom: 30px;
+}
+
+.personas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.persona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.persona img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.persona h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+

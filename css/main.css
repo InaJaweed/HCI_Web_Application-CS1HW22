@@ -1,0 +1,99 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner {
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    bottom: 0; 
+    width: 100%;
+}
+
+.banner p {
+    white-space: nowrap;
+    overflow: hidden;
+    color: azure;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.content {
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.content h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #1E1E1E;
+}
+
+.content h1 {
+    text-transform: uppercase;
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1E1E1E;
+    line-height: 1;
+}
+
+.content p {
+    font-size: 20px;
+    color: #1E1E1E;
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1E1E1E;
+    background: #E0AFA0;
+    border-radius: 8px;
+    padding: 16px 38px;
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.button:hover {
+    background-color: #D1A397;
+}
+
+.feature-img {
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    width: 45rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .content p {
+        width: fit-content;
+        padding: 5px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.4);
+    }
+}

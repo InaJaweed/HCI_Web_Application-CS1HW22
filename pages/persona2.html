@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevWear</title>
+    <!-- CSS Styles-->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/persona.css">
+    <link rel="stylesheet" href="../css/header-footer-cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script src="../data/productData.js" defer></script>
+    <script src="../JS/common.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <p class="menu-button">&#9776;</p>
+        <a class="logo" href="../index.html">
+            <img src="../images/logoTitle.png" alt="Logo">
+        </a>
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./m-product.html">PRODUCTS</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="cart-btn">
+                <img src="../images/cartIcon.png" alt="Shopping Cart">
+                <span class="cart-items">0</span>
+            </div>
+        </div>
+
+        <div class="side-menu">
+            <div class="menu-title">
+                <h2>Menu</h2>
+                <button class="close-button">&times;</button>
+            </div>
+            <nav class="mobile-navigation">
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./m-product.html">PRODUCTS</a></li>
+                    <li><a href="./about.html">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cart-sidebar">
+        <div class="cart-title">
+            <h2>Shopping Basket</h2>
+            <button class="cart-close-button">&times;</button>
+        </div>
+        <div class="cart-items-container">
+            <!-- Here goes the list of cart items -->
+        </div>
+        <div class="cart-total-container">
+            <p>Total:</p>
+            <p class="cart-total-price">£0.00</p>
+        </div>
+        <div class="cart-buttons-container">
+            <button class="cart-remove-all-button">Remove all items</button>
+            <button class="cart-checkout-button">Checkout</button>
+        </div>
+    </div>
+    <div class="info-message">
+        <p class="message-text">
+            <!-- message notification -->
+        </p>
+    </div>
+
+
+    <div class="wrapper">
+        <div class="left">
+            <img src="../images/2.png" alt="Profile Picture">
+            <h4>Frank Taylor</h4>
+            <p>Age: 29</p>
+            <p>Location: London, UK</p>
+            <p>Job: UI/UX Designer</p>
+        </div>
+        <div class="right">
+            <div class="quote">
+                <p style="font-weight: bold; font-size: 1em;">"Style that makes a statement, design that stands the test of time."</p>
+            </div>
+            <div class="bio">
+                <h3>Bio</h3>
+                <p>Frank is a 29-year-old UI/UX designer who loves to express his unique sense of style through his clothing. 
+                    He values high-quality fabrics, unique designs, and attention to detail. 
+                    Frank likes to stay up-to-date with the latest fashion trends and is always experimenting with 
+                    different styles and colors. He enjoys shopping from brands that offer a wide variety 
+                    of styles and sizes, and values inclusivity and diversity. As a designer, 
+                    Frank appreciates clothes that allow him to move around freely and express himself creatively. 
+                    He is always looking for new and innovative clothing designs that will set him apart from the crowd.</p>
+            </div>
+            <div class="goal">
+                <h3>Goal</h3>
+                <p>Frank is motivated to use his ideas to provide distinctive and memorable brand experiences. 
+                    He prefers to work on initiatives that enable him to demonstrate his ingenuity and realise his ideas. 
+                    Frank is constantly seeking for fresh possibilities and challenges to stretch his limits and advance as a designer. 
+                    He looks for opportunities to work together with other creatives and establish a network 
+                    of people who share his enthusiasm for design. Frank is inspired by the chance to improve 
+                    people's lives via his job and aspires to one day establish a company that is renowned 
+                    and respected for its originality and ingenuity.
+                </p>
+            </div>
+            <div class="frustrations">
+                <h3>Frustrations</h3>
+                <ul>
+                    <li>Being limited in creativity by workplace</li>
+                    <li>Having tight deadlines</li>
+                    <li>Lack of feedback on the work</li>
+                    <li>Project changes in the middle of the job</li>
+                </ul>
+            </div>
+            <div class="dream-companies">
+                <h3>Dream Companies</h3>
+                <ul>
+                    <li>Adobe</li>
+                    <li>Autodesk</li>
+                    <li>IBM</li>
+                </ul>
+            </div>
+            <div class="personality">
+                <h3>Personality</h3>
+                <ul>
+                    <li>Creative</li>
+                    <li>Self-motivated</li>
+                    <li>Detail-oriented</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
