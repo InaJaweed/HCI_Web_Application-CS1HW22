@@ -1,13 +1,18 @@
 /* NAVBAR */
 
 .header {
+    background-color: rgb(234, 234, 234);
+    box-shadow: 0 0 15px -2px #8a8a8a;
+
+}
+
+.wrapper-navbar {
+    max-width: 1440px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    width: 100%;
-    background-color: rgb(234, 234, 234);
-    box-shadow: 0 0 15px -2px #8a8a8a;
 }
 
 .logo {
