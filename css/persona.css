@@ -6,7 +6,7 @@ body {
 .wrapper {
     position: relative;
     margin: 20px auto;
-    width: 70%;
+    max-width: 1440px;
     /* height: auto; */
     display: flex;
     box-shadow: 0 1px 20px 0 rgba(69, 90, 100, .08);
