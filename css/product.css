@@ -1,5 +1,6 @@
 .main-product {
     max-width: 1440px;
+    /* height: 100vh; */
     margin: 2rem auto 0 auto;
     text-align: center;
 }
@@ -19,6 +20,7 @@
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     gap: 1rem;
     width: 85%;
+    margin-bottom: 2rem;
 }
 
 .categories {

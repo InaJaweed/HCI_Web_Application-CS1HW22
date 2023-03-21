@@ -81,12 +81,13 @@ body {
 
 .contact{
     position: relative;
+    max-width: 1440px;
     min-height: 100vh;
     padding: 50px 100px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-size: cover;
 }
 
@@ -117,8 +118,9 @@ body {
 
 }
 
-.container .contatcInfo{
-    width: 50%;
+.container .contactInfo{
+    width: 50%; 
+    margin-right: 2rem;
     display: flex;
     flex-direction: column;
 }
