@@ -309,14 +309,17 @@
 
  .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem 1rem 4rem 1rem;
     background-color: #25242A;
 }
 
 .footer>div {
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    align-items: center;
 }
 
 .footer h2 {
@@ -346,3 +349,8 @@
 .footer li:first-child {
     font-weight: bold;
 } 
+
+.footer a {
+    color: white; /* change link color to black */
+    text-decoration: none; /* remove underline */
+  }
