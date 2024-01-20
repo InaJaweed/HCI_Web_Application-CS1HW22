@@ -6,8 +6,8 @@ This collaborative project was undertaken as part of our second-year module on H
 
 ## Project Details
 
-**Course**: HCI and Web Application - Second-Year Module
-**Languages:** HTML, CSS, JavaScript
+- **Course**: HCI and Web Application - Second-Year Module
+- **Languages:** HTML, CSS, JavaScript
 
 ## Key Features
 
